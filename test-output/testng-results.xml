@@ -1,61 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-30T07:49:23 IST" name="Default suite" finished-at="2021-06-30T07:49:28 IST" duration-ms="5470">
+  <suite started-at="2021-07-04T18:01:21 IST" name="Default suite" finished-at="2021-07-04T18:01:25 IST" duration-ms="3667">
     <groups>
     </groups>
-    <test started-at="2021-06-30T07:49:23 IST" name="Default test" finished-at="2021-06-30T07:49:28 IST" duration-ms="5470">
-      <class name="com.automate.DataDriven.TC007_DataDrivenPost">
-        <test-method signature="fnPostRequestDataDriven(java.lang.String, java.lang.String)[pri:0, instance:com.automate.DataDriven.TC007_DataDrivenPost@2525ff7e]" started-at="2021-06-30T07:49:23 IST" name="fnPostRequestDataDriven" data-provider="EmpData" finished-at="2021-06-30T07:49:27 IST" duration-ms="3931" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[morpheus]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[leader]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2021-07-04T18:01:21 IST" name="Default test" finished-at="2021-07-04T18:01:25 IST" duration-ms="3667">
+      <class name="com.automate.WhenThen.TC001_GetTest">
+        <test-method signature="test1()[pri:0, instance:com.automate.WhenThen.TC001_GetTest@87a85e1]" started-at="2021-07-04T18:01:21 IST" name="test1" finished-at="2021-07-04T18:01:24 IST" duration-ms="2464" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fnPostRequestDataDriven -->
-        <test-method signature="fnPostRequestDataDriven(java.lang.String, java.lang.String)[pri:0, instance:com.automate.DataDriven.TC007_DataDrivenPost@2525ff7e]" started-at="2021-06-30T07:49:27 IST" name="fnPostRequestDataDriven" data-provider="EmpData" finished-at="2021-06-30T07:49:27 IST" duration-ms="743" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Rock]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Wrestle]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- test1 -->
+        <test-method signature="test2()[pri:0, instance:com.automate.WhenThen.TC001_GetTest@87a85e1]" started-at="2021-07-04T18:01:24 IST" name="test2" finished-at="2021-07-04T18:01:25 IST" duration-ms="1140" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fnPostRequestDataDriven -->
-        <test-method signature="fnPostRequestDataDriven(java.lang.String, java.lang.String)[pri:0, instance:com.automate.DataDriven.TC007_DataDrivenPost@2525ff7e]" started-at="2021-06-30T07:49:27 IST" name="fnPostRequestDataDriven" data-provider="EmpData" finished-at="2021-06-30T07:49:28 IST" duration-ms="728" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Leo]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Act]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fnPostRequestDataDriven -->
-      </class> <!-- com.automate.DataDriven.TC007_DataDrivenPost -->
+        </test-method> <!-- test2 -->
+      </class> <!-- com.automate.WhenThen.TC001_GetTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.automate.restAPI.TC003_GetRequest_ValidateHeaders">
+      <class name="com.automate.restAPI.TC008_Given_When_Then">
         <methods>
-          <include name="fnValidateHeaders"/>
+          <include name="fnUseOfWhenThen"/>
         </methods>
-      </class> <!-- com.automate.restAPI.TC003_GetRequest_ValidateHeaders -->
+      </class> <!-- com.automate.restAPI.TC008_Given_When_Then -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
