@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
+  <test thread-count="5" name="Test" parallel="methods">
   	<parameter name="browser" value="Firefox"></parameter>
     <classes>
-      <class name="com.Google.tests.SearchKeywordTests"/>
-      <class name="com.Google.tests.FeelingLuckyTests"/>
+      <class name="com.Elements.tests.Tests"/>
+     <!--  <class name="com.Google.tests.FeelingLuckyTests"/> -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

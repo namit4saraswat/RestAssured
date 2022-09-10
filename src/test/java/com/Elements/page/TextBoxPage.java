@@ -5,8 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import com.PageFactory.BasePage;
-import com.PageFactory.Page;
-import com.Utils.Wait;
 
 public class TextBoxPage extends BasePage {
 

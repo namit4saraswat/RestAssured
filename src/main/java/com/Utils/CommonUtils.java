@@ -1,5 +1,6 @@
 package com.Utils;
 
+import java.io.File;
 import java.io.IOException;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -31,6 +32,20 @@ public class CommonUtils {
 		js.executeScript("arguments[0].style.border = '3px solid red'", element);
 	}
 	
+	public static void mkDir(String dirName) {
+		String folderPath = new File(dirName).getAbsolutePath();
+		File file = new File(folderPath);
+		if(file.isDirectory()) {
+			Log.info("Directory already exist");
+		}else {
+			boolean flag = file.mkdir();
+			if(flag) {
+				Log.info("Directory " + dirName + " create successfully");
+			}else {
+				Log.info("Failed to create directory : " + dirName);
+			}
+		}
+	}
 
 
 }
