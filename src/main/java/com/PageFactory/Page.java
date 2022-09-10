@@ -5,16 +5,23 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Page {
 
-	WebDriver driver;
+	protected static WebDriver driverCurrent;
 	
 	public Page(WebDriver driver) {
-		this.driver = driver;
+		driverCurrent = driver;
 	}
 
 	public <TPage extends BasePage> TPage getInstance(Class<TPage> pageClass) {
 
-		return PageFactory.initElements(driver, pageClass);
+		return PageFactory.initElements(driverCurrent, pageClass);
 
 	}
+	
+
+	public static WebDriver getCurrentDriver() {
+		
+		return driverCurrent;
+	}
+	
 	
 }

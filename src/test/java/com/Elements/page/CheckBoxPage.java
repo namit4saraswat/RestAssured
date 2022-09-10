@@ -5,20 +5,19 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import com.PageFactory.BasePage;
-import com.PageFactory.Page;
-import com.Utils.Wait;
 
-public class TextBoxPage extends BasePage {
+public class CheckBoxPage extends BasePage{
 
-	public TextBoxPage(WebDriver driver) {
+	public CheckBoxPage(WebDriver driver) {
 		super(driver);
+		// TODO Auto-generated constructor stub
 	}
-
+	
 	@FindBy(xpath = "//li[@class='btn btn-light active']")
-	WebElement textBox;
-
-	public void openTextBox() {
-		click(textBox);
+	WebElement chkHomePage;
+	
+	public void checkHomeBox() {
+		chkHomePage.click();
 	}
 
 }

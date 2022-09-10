@@ -9,8 +9,9 @@ import org.testng.annotations.Parameters;
 
 import com.PageFactory.Page;
 import com.Utils.CommonUtils;
+import com.Utils.Configuration;
 
-public class BaseTests {
+public class BaseTest {
 
 	public Page page;
 
@@ -30,10 +31,14 @@ public class BaseTests {
 		
 		driver.manage().window().maximize();
 
-		driver.get("https://www.toolsqa.com/elements");
+		driver.get(Configuration.getValue("baseURL"));
 
 		page = new Page(driver);
-
+		
+	}
+	
+	public void getDriver() {
+		
 	}
 
 	@AfterMethod

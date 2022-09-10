@@ -2,15 +2,18 @@ package com.Elements.tests;
 
 import org.testng.annotations.Test;
 
+import com.Elements.page.HomePage;
 import com.Elements.page.TextBoxPage;
-import com.tests.base.BaseTests;
+import com.tests.base.BaseTest;
 
-public class TextBoxTests extends BaseTests {
+public class TextBoxTests extends BaseTest {
 
 	
 	@Test
 	public void fillForm() {
-		page.getInstance(TextBoxPage.class).openTextBox();
+		HomePage homePage = page.getInstance(HomePage.class);
+		TextBoxPage textBoxPage =  homePage.openElementPage();
+		textBoxPage.openTextBox();
 	}
 	
 	
