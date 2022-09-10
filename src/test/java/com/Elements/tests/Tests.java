@@ -1,5 +1,6 @@
 package com.Elements.tests;
 
+import org.junit.Assert;
 import org.testng.annotations.Test;
 
 import com.tests.base.BaseTest;
@@ -18,6 +19,7 @@ public class Tests extends BaseTest{
 	public void Test2() {
 		System.out.println("This is Test2");
 		System.out.println("This is Test2");
+		Assert.fail();
 	}
 	
 	@Test

@@ -40,7 +40,7 @@ public class BaseTest {
 			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"/dev/null");
 			fOptions.addArguments("-private");
 			fOptions.addArguments("-start-maximized");
-
+			fOptions.setHeadless(true);
 			driver = new FirefoxDriver(fOptions);
 		}
 
