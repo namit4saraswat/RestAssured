@@ -56,7 +56,8 @@ public class BaseTest {
 
 	@AfterMethod
 	public void tearDown() {
-		DriverFactory.getInstance().closeBrowser();
+		driver.close();
+		//DriverFactory.getInstance().closeBrowser();
 	}
 
 }
