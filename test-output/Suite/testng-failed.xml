@@ -4,20 +4,13 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="Firefox"/>
     <classes>
-      <class name="com.Elements.tests.CheckBoxTests">
+      <class name="com.Google.tests.FeelingLuckyTests">
         <methods>
           <include name="setUp"/>
-          <include name="checkBox"/>
           <include name="tearDown"/>
+          <include name="feelingLucky"/>
         </methods>
-      </class> <!-- com.Elements.tests.CheckBoxTests -->
-      <class name="com.Elements.tests.TextBoxTests">
-        <methods>
-          <include name="fillForm"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.Elements.tests.TextBoxTests -->
+      </class> <!-- com.Google.tests.FeelingLuckyTests -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

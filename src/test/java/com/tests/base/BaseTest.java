@@ -31,7 +31,7 @@ public class BaseTest {
 		
 		driver.manage().window().maximize();
 
-		driver.get(Configuration.getValue("baseURL"));
+		driver.get(Configuration.getValue("baseURLGoogle"));
 
 		page = new Page(driver);
 		

@@ -22,4 +22,10 @@ public class BasePage extends Page {
 		
 	}
 	
+	public void sendKeys(WebElement element, String text) {
+		Wait.waitForElementToBeVisible(element);
+		CommonUtils.highLightElement(element);
+		element.sendKeys(text);
+	}
+	
 }

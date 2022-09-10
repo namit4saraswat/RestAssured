@@ -30,5 +30,7 @@ public class CommonUtils {
 		JavascriptExecutor js = (JavascriptExecutor) Page.getCurrentDriver();
 		js.executeScript("arguments[0].style.border = '3px solid red'", element);
 	}
+	
+
 
 }

@@ -13,7 +13,7 @@ public class HomePage extends BasePage {
 		// TODO Auto-generated constructor stub
 	}
 
-	@FindBy(xpath = "//h5[text()='Elements']")
+	@FindBy(xpath = "//*[name()='path' and contains(@d,'M16 132h41')]")
 	WebElement elements;
 
 	public TextBoxPage openElementPage() {

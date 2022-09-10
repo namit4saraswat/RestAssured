@@ -4,8 +4,8 @@
   <test thread-count="5" name="Test">
   	<parameter name="browser" value="Firefox"></parameter>
     <classes>
-      <class name="com.Elements.tests.TextBoxTests"/>
-      <!-- <class name="com.Elements.tests.CheckBoxTests"/> -->
+      <class name="com.Google.tests.SearchKeywordTests"/>
+      <class name="com.Google.tests.FeelingLuckyTests"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
