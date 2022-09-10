@@ -44,8 +44,8 @@ public class BaseTest {
 			driver = new FirefoxDriver(fOptions);
 		}
 
-//		DriverFactory.getInstance().setDriver(driver);
-//		driver = DriverFactory.getInstance().getDriver();
+		DriverFactory.getInstance().setDriver(driver);
+		driver = DriverFactory.getInstance().getDriver();
 		driver.get(Configuration.getValue("baseURLGoogle"));
 
 		page = new Page(driver);
@@ -56,8 +56,7 @@ public class BaseTest {
 
 	@AfterMethod
 	public void tearDown() {
-		driver.close();
-		//DriverFactory.getInstance().closeBrowser();
+		DriverFactory.getInstance().closeBrowser();
 	}
 
 }

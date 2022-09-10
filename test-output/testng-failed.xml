@@ -4,13 +4,14 @@
   <test thread-count="5" parallel="methods" name="Test(failed)">
     <parameter name="browser" value="Firefox"/>
     <classes>
-      <class name="com.Google.tests.FeelingLuckyTests">
+      <class name="com.Elements.tests.Tests">
         <methods>
+          <include name="Test7"/>
+          <include name="Test6"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="feelingLucky"/>
         </methods>
-      </class> <!-- com.Google.tests.FeelingLuckyTests -->
+      </class> <!-- com.Elements.tests.Tests -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

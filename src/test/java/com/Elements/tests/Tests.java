@@ -2,17 +2,16 @@ package com.Elements.tests;
 
 import org.testng.annotations.Test;
 
-public class Tests {
+import com.tests.base.BaseTest;
+
+public class Tests extends BaseTest{
 
 	@Test
 	public void Test1() {
 		System.out.println("This is Test1");
 	}
 	
-	@Test
-	public void Test7() {
-		System.out.println("This is Test7");
-	}
+	
 	
 	@Test
 	public void Test2() {
@@ -24,19 +23,25 @@ public class Tests {
 		System.out.println("This is Test3");
 	}
 	
-	@Test
+	@Test(enabled=true)
 	public void Test4() {
 		System.out.println("This is Test4");
 	}
 	
-	@Test
+	@Test(enabled=true)
 	public void Test5() {
 		System.out.println("This is Test5");
 	}
 	
-	@Test
+	
+	@Test(enabled=true)
 	public void Test6() {
 		System.out.println("This is Test6");
+	}
+	
+	@Test(enabled=true)
+	public void Test7() {
+		System.out.println("This is Test7");
 	}
 	
 	
