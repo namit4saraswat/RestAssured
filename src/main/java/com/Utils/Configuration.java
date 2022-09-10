@@ -20,4 +20,15 @@ public class Configuration {
 		return prop.getProperty(key);
 		
 	}
+	
+	public static void setValue(String key, String value) {
+		try {
+			prop.load(new FileInputStream(new File(CommonUtils.getResourcePath("config.properties"))));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		prop.setProperty(key, value);
+	}
 }

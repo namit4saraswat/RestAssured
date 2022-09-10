@@ -6,10 +6,11 @@
     <classes>
       <class name="com.Elements.tests.Tests">
         <methods>
-          <include name="Test7"/>
-          <include name="Test6"/>
+          <include name="Test2"/>
           <include name="setUp"/>
+          <include name="Test5"/>
           <include name="tearDown"/>
+          <include name="Test4"/>
         </methods>
       </class> <!-- com.Elements.tests.Tests -->
     </classes>

@@ -26,7 +26,7 @@ public class BaseTest {
 	@Parameters({ "browser" })
 	@BeforeMethod
 	public void setUp(String browser) {
-
+		Configuration.setValue("browser", browser);
 		if (browser.equalsIgnoreCase("Chrome")) {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();

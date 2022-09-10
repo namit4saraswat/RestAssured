@@ -17,7 +17,7 @@ public class BasePage extends Page {
 		Wait.waitForElementToBeVisible(element);
 		CommonUtils.highLightElement(element);
 		element.click();
-		
+		//action can also be logged into extent Report
 	}
 	
 	public void sendKeys(WebElement element, String text) {
