@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 <title>TestNG Report</title>
@@ -8,120 +8,11 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">57,296</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">4,207</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="3">com.Elements.tests.Tests</td><td><a href="#m0">tearDown</a></td><td rowspan="3">1662820833752</td><td rowspan="3">25197</td></tr><tr class="failedeven"><td><a href="#m1">tearDown</a></td></tr><tr class="failedeven"><td><a href="#m2">tearDown</a></td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">com.Elements.tests.Tests</td><td><a href="#m3">Test1</a></td><td rowspan="1">1662820839485</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m4">Test2</a></td><td rowspan="1">1662820843949</td><td rowspan="1">3</td></tr><tr class="passedeven"><td><a href="#m5">Test3</a></td><td rowspan="1">1662820841717</td><td rowspan="1">4</td></tr><tr class="passedeven"><td><a href="#m6">Test4</a></td><td rowspan="1">1662820833724</td><td rowspan="1">20</td></tr><tr class="passedeven"><td><a href="#m7">Test5</a></td><td rowspan="1">1662820842992</td><td rowspan="1">4</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.HTTPRequest</td><td><a href="#m0">getUser</a></td><td rowspan="1">1707564030612</td><td rowspan="1">4108</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.Elements.tests.Tests#tearDown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;NAMITS&apos;, ip: &apos;192.168.29.134&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [abb5bd8a-f02d-4d20-8f83-0e313e141b49, quit {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 104.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220902153754, moz:debuggerAddress: localhost:54105, moz:geckodriverVersion: 0.31.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 11216, moz:profile: C:\Users\namit\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54105/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: abb5bd8a-f02d-4d20-8f83-0e313e141b49
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:132)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:439)
-	at com.PageFactory.DriverFactory.closeBrowser(DriverFactory.java:29)
-	at com.tests.base.BaseTest.tearDown(BaseTest.java:59)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:831)
-Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;NAMITS&apos;, ip: &apos;192.168.29.134&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
-Driver info: driver.version: unknown
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2092)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
-	... 26 more
-Caused by: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;NAMITS&apos;, ip: &apos;192.168.29.134&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.os.OsProcess.waitFor(OsProcess.java:174)
-	at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:127)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$2(DriverCommandExecutor.java:122)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1764)
-	... 3 more
-... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.Elements.tests.Tests#tearDown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;NAMITS&apos;, ip: &apos;192.168.29.134&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [980b437c-7706-4982-9541-b0921f937b25, quit {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 104.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220902153754, moz:debuggerAddress: localhost:57718, moz:geckodriverVersion: 0.31.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 14956, moz:profile: C:\Users\namit\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57718/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 980b437c-7706-4982-9541-b0921f937b25
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:132)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:439)
-	at com.PageFactory.DriverFactory.closeBrowser(DriverFactory.java:29)
-	at com.tests.base.BaseTest.tearDown(BaseTest.java:59)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:831)
-Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;NAMITS&apos;, ip: &apos;192.168.29.134&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
-Driver info: driver.version: unknown
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2092)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
-	... 26 more
-Caused by: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;NAMITS&apos;, ip: &apos;192.168.29.134&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.os.OsProcess.waitFor(OsProcess.java:174)
-	at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:127)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$2(DriverCommandExecutor.java:122)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1764)
-	... 3 more
-... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.Elements.tests.Tests#tearDown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;NAMITS&apos;, ip: &apos;192.168.29.134&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [f5f2eafa-b3d1-4eba-ac89-84b8b32b4ee5, quit {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 104.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220902153754, moz:debuggerAddress: localhost:57404, moz:geckodriverVersion: 0.31.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 7868, moz:profile: C:\Users\namit\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57404/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f5f2eafa-b3d1-4eba-ac89-84b8b32b4ee5
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:132)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:439)
-	at com.PageFactory.DriverFactory.closeBrowser(DriverFactory.java:29)
-	at com.tests.base.BaseTest.tearDown(BaseTest.java:59)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:831)
-Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;NAMITS&apos;, ip: &apos;192.168.29.134&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
-Driver info: driver.version: unknown
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2092)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
-	... 26 more
-Caused by: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;NAMITS&apos;, ip: &apos;192.168.29.134&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.os.OsProcess.waitFor(OsProcess.java:174)
-	at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:127)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$2(DriverCommandExecutor.java:122)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1764)
-	... 3 more
-... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.Elements.tests.Tests#Test1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.Elements.tests.Tests#Test2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.Elements.tests.Tests#Test3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.Elements.tests.Tests#Test4</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.Elements.tests.Tests#Test5</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">com.HTTPRequest#getUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -3,19 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Elements.tests.Tests">
+      <class name="com.HTTPRequest">
         <methods>
-          <include name="Test7"/>
-          <include name="Test6"/>
-          <include name="setUp"/>
-          <include name="Test3"/>
-          <include name="Test2"/>
-          <include name="Test5"/>
-          <include name="tearDown"/>
-          <include name="Test4"/>
-          <include name="Test1"/>
+          <include name="getUser"/>
         </methods>
-      </class> <!-- com.Elements.tests.Tests -->
+      </class> <!-- com.HTTPRequest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
